@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CDEBB42256E413600D1711D /* PythonPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */; };
+		4CDEBB44256E413600D1711D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB43256E413600D1711D /* ContentView.swift */; };
+		4CDEBB46256E413B00D1711D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEBB45256E413B00D1711D /* Assets.xcassets */; };
+		4CDEBB49256E413B00D1711D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEBB48256E413B00D1711D /* Preview Assets.xcassets */; };
+		4CDEBB4B256E413B00D1711D /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB4A256E413B00D1711D /* Persistence.swift */; };
+		4CDEBB4E256E413B00D1711D /* PythonPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB4C256E413B00D1711D /* PythonPlayground.xcdatamodeld */; };
+		4CDEBB59256E413B00D1711D /* PythonPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB58256E413B00D1711D /* PythonPlaygroundTests.swift */; };
+		4CDEBB64256E413B00D1711D /* PythonPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB63256E413B00D1711D /* PythonPlaygroundUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4CDEBB55256E413B00D1711D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CDEBB36256E413600D1711D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CDEBB3D256E413600D1711D;
+			remoteInfo = PythonPlayground;
+		};
+		4CDEBB60256E413B00D1711D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4CDEBB36256E413600D1711D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4CDEBB3D256E413600D1711D;
+			remoteInfo = PythonPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4CDEBB3E256E413600D1711D /* PythonPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonPlaygroundApp.swift; sourceTree = "<group>"; };
+		4CDEBB43256E413600D1711D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4CDEBB45256E413B00D1711D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4CDEBB48256E413B00D1711D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CDEBB4A256E413B00D1711D /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4CDEBB4D256E413B00D1711D /* PythonPlayground.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PythonPlayground.xcdatamodel; sourceTree = "<group>"; };
+		4CDEBB4F256E413B00D1711D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDEBB54256E413B00D1711D /* PythonPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDEBB58256E413B00D1711D /* PythonPlaygroundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonPlaygroundTests.swift; sourceTree = "<group>"; };
+		4CDEBB5A256E413B00D1711D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDEBB5F256E413B00D1711D /* PythonPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CDEBB63256E413B00D1711D /* PythonPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonPlaygroundUITests.swift; sourceTree = "<group>"; };
+		4CDEBB65256E413B00D1711D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4CDEBB3B256E413600D1711D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDEBB51256E413B00D1711D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDEBB5C256E413B00D1711D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4CDEBB35256E413600D1711D = {
+			isa = PBXGroup;
+			children = (
+				4CDEBB40256E413600D1711D /* PythonPlayground */,
+				4CDEBB57256E413B00D1711D /* PythonPlaygroundTests */,
+				4CDEBB62256E413B00D1711D /* PythonPlaygroundUITests */,
+				4CDEBB3F256E413600D1711D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4CDEBB3F256E413600D1711D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEBB3E256E413600D1711D /* PythonPlayground.app */,
+				4CDEBB54256E413B00D1711D /* PythonPlaygroundTests.xctest */,
+				4CDEBB5F256E413B00D1711D /* PythonPlaygroundUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4CDEBB40256E413600D1711D /* PythonPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */,
+				4CDEBB43256E413600D1711D /* ContentView.swift */,
+				4CDEBB45256E413B00D1711D /* Assets.xcassets */,
+				4CDEBB4A256E413B00D1711D /* Persistence.swift */,
+				4CDEBB4F256E413B00D1711D /* Info.plist */,
+				4CDEBB4C256E413B00D1711D /* PythonPlayground.xcdatamodeld */,
+				4CDEBB47256E413B00D1711D /* Preview Content */,
+			);
+			path = PythonPlayground;
+			sourceTree = "<group>";
+		};
+		4CDEBB47256E413B00D1711D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEBB48256E413B00D1711D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CDEBB57256E413B00D1711D /* PythonPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEBB58256E413B00D1711D /* PythonPlaygroundTests.swift */,
+				4CDEBB5A256E413B00D1711D /* Info.plist */,
+			);
+			path = PythonPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		4CDEBB62256E413B00D1711D /* PythonPlaygroundUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4CDEBB63256E413B00D1711D /* PythonPlaygroundUITests.swift */,
+				4CDEBB65256E413B00D1711D /* Info.plist */,
+			);
+			path = PythonPlaygroundUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4CDEBB3D256E413600D1711D /* PythonPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDEBB68256E413B00D1711D /* Build configuration list for PBXNativeTarget "PythonPlayground" */;
+			buildPhases = (
+				4CDEBB3A256E413600D1711D /* Sources */,
+				4CDEBB3B256E413600D1711D /* Frameworks */,
+				4CDEBB3C256E413600D1711D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PythonPlayground;
+			productName = PythonPlayground;
+			productReference = 4CDEBB3E256E413600D1711D /* PythonPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4CDEBB53256E413B00D1711D /* PythonPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDEBB6B256E413B00D1711D /* Build configuration list for PBXNativeTarget "PythonPlaygroundTests" */;
+			buildPhases = (
+				4CDEBB50256E413B00D1711D /* Sources */,
+				4CDEBB51256E413B00D1711D /* Frameworks */,
+				4CDEBB52256E413B00D1711D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CDEBB56256E413B00D1711D /* PBXTargetDependency */,
+			);
+			name = PythonPlaygroundTests;
+			productName = PythonPlaygroundTests;
+			productReference = 4CDEBB54256E413B00D1711D /* PythonPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4CDEBB5E256E413B00D1711D /* PythonPlaygroundUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4CDEBB6E256E413B00D1711D /* Build configuration list for PBXNativeTarget "PythonPlaygroundUITests" */;
+			buildPhases = (
+				4CDEBB5B256E413B00D1711D /* Sources */,
+				4CDEBB5C256E413B00D1711D /* Frameworks */,
+				4CDEBB5D256E413B00D1711D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4CDEBB61256E413B00D1711D /* PBXTargetDependency */,
+			);
+			name = PythonPlaygroundUITests;
+			productName = PythonPlaygroundUITests;
+			productReference = 4CDEBB5F256E413B00D1711D /* PythonPlaygroundUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4CDEBB36256E413600D1711D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					4CDEBB3D256E413600D1711D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					4CDEBB53256E413B00D1711D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4CDEBB3D256E413600D1711D;
+					};
+					4CDEBB5E256E413B00D1711D = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = 4CDEBB3D256E413600D1711D;
+					};
+				};
+			};
+			buildConfigurationList = 4CDEBB39256E413600D1711D /* Build configuration list for PBXProject "PythonPlayground" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4CDEBB35256E413600D1711D;
+			productRefGroup = 4CDEBB3F256E413600D1711D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4CDEBB3D256E413600D1711D /* PythonPlayground */,
+				4CDEBB53256E413B00D1711D /* PythonPlaygroundTests */,
+				4CDEBB5E256E413B00D1711D /* PythonPlaygroundUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4CDEBB3C256E413600D1711D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDEBB49256E413B00D1711D /* Preview Assets.xcassets in Resources */,
+				4CDEBB46256E413B00D1711D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDEBB52256E413B00D1711D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDEBB5D256E413B00D1711D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4CDEBB3A256E413600D1711D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDEBB4E256E413B00D1711D /* PythonPlayground.xcdatamodeld in Sources */,
+				4CDEBB4B256E413B00D1711D /* Persistence.swift in Sources */,
+				4CDEBB44256E413600D1711D /* ContentView.swift in Sources */,
+				4CDEBB42256E413600D1711D /* PythonPlaygroundApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDEBB50256E413B00D1711D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDEBB59256E413B00D1711D /* PythonPlaygroundTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4CDEBB5B256E413B00D1711D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CDEBB64256E413B00D1711D /* PythonPlaygroundUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4CDEBB56256E413B00D1711D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CDEBB3D256E413600D1711D /* PythonPlayground */;
+			targetProxy = 4CDEBB55256E413B00D1711D /* PBXContainerItemProxy */;
+		};
+		4CDEBB61256E413B00D1711D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4CDEBB3D256E413600D1711D /* PythonPlayground */;
+			targetProxy = 4CDEBB60256E413B00D1711D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4CDEBB66256E413B00D1711D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4CDEBB67256E413B00D1711D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4CDEBB69256E413B00D1711D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PythonPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = LZ577RN3WF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PythonPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.PythonPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4CDEBB6A256E413B00D1711D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"PythonPlayground/Preview Content\"";
+				DEVELOPMENT_TEAM = LZ577RN3WF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = PythonPlayground/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.PythonPlayground;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4CDEBB6C256E413B00D1711D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ577RN3WF;
+				INFOPLIST_FILE = PythonPlaygroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.PythonPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PythonPlayground.app/PythonPlayground";
+			};
+			name = Debug;
+		};
+		4CDEBB6D256E413B00D1711D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ577RN3WF;
+				INFOPLIST_FILE = PythonPlaygroundTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.PythonPlaygroundTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PythonPlayground.app/PythonPlayground";
+			};
+			name = Release;
+		};
+		4CDEBB6F256E413B00D1711D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ577RN3WF;
+				INFOPLIST_FILE = PythonPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.PythonPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PythonPlayground;
+			};
+			name = Debug;
+		};
+		4CDEBB70256E413B00D1711D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LZ577RN3WF;
+				INFOPLIST_FILE = PythonPlaygroundUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.github.kewlbear.PythonPlaygroundUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PythonPlayground;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4CDEBB39256E413600D1711D /* Build configuration list for PBXProject "PythonPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDEBB66256E413B00D1711D /* Debug */,
+				4CDEBB67256E413B00D1711D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDEBB68256E413B00D1711D /* Build configuration list for PBXNativeTarget "PythonPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDEBB69256E413B00D1711D /* Debug */,
+				4CDEBB6A256E413B00D1711D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDEBB6B256E413B00D1711D /* Build configuration list for PBXNativeTarget "PythonPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDEBB6C256E413B00D1711D /* Debug */,
+				4CDEBB6D256E413B00D1711D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4CDEBB6E256E413B00D1711D /* Build configuration list for PBXNativeTarget "PythonPlaygroundUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4CDEBB6F256E413B00D1711D /* Debug */,
+				4CDEBB70256E413B00D1711D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4CDEBB4C256E413B00D1711D /* PythonPlayground.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4CDEBB4D256E413B00D1711D /* PythonPlayground.xcdatamodel */,
+			);
+			currentVersion = 4CDEBB4D256E413B00D1711D /* PythonPlayground.xcdatamodel */;
+			path = PythonPlayground.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4CDEBB36256E413600D1711D /* Project object */;
+}
