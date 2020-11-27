@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C7CF6FB256F30CE00A980FD /* rubicon-objc-0.4.0 in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CF6FA256F30CE00A980FD /* rubicon-objc-0.4.0 */; };
+		4C7CF701256F3A6400A980FD /* ObjCBridge.py in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CF700256F3A6400A980FD /* ObjCBridge.py */; };
 		4CDEBB42256E413600D1711D /* PythonPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */; };
 		4CDEBB44256E413600D1711D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB43256E413600D1711D /* ContentView.swift */; };
 		4CDEBB46256E413B00D1711D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDEBB45256E413B00D1711D /* Assets.xcassets */; };
@@ -15,6 +17,7 @@
 		4CDEBB4E256E413B00D1711D /* PythonPlayground.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB4C256E413B00D1711D /* PythonPlayground.xcdatamodeld */; };
 		4CDEBB59256E413B00D1711D /* PythonPlaygroundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB58256E413B00D1711D /* PythonPlaygroundTests.swift */; };
 		4CDEBB64256E413B00D1711D /* PythonPlaygroundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB63256E413B00D1711D /* PythonPlaygroundUITests.swift */; };
+		4CDEBB7C256E43C000D1711D /* PythonKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4CDEBB7B256E43C000D1711D /* PythonKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4C7CF6FA256F30CE00A980FD /* rubicon-objc-0.4.0 */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "rubicon-objc-0.4.0"; sourceTree = "<group>"; };
+		4C7CF700256F3A6400A980FD /* ObjCBridge.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = ObjCBridge.py; sourceTree = "<group>"; };
 		4CDEBB3E256E413600D1711D /* PythonPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PythonPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonPlaygroundApp.swift; sourceTree = "<group>"; };
 		4CDEBB43256E413600D1711D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +54,9 @@
 		4CDEBB5F256E413B00D1711D /* PythonPlaygroundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PythonPlaygroundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDEBB63256E413B00D1711D /* PythonPlaygroundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PythonPlaygroundUITests.swift; sourceTree = "<group>"; };
 		4CDEBB65256E413B00D1711D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4CDEBB83256E445000D1711D /* Python-iOS */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Python-iOS"; path = "../Python-iOS"; sourceTree = "<group>"; };
+		4CF2CBCF257081D50045DC77 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		4CF2CBD0257081D50045DC77 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDEBB7C256E43C000D1711D /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,9 +85,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4C7CF6FF256F3A2600A980FD /* Python */ = {
+			isa = PBXGroup;
+			children = (
+				4C7CF700256F3A6400A980FD /* ObjCBridge.py */,
+			);
+			path = Python;
+			sourceTree = "<group>";
+		};
 		4CDEBB35256E413600D1711D = {
 			isa = PBXGroup;
 			children = (
+				4CF2CBD0257081D50045DC77 /* README.md */,
+				4CF2CBCF257081D50045DC77 /* LICENSE */,
+				4CDEBB83256E445000D1711D /* Python-iOS */,
 				4CDEBB40256E413600D1711D /* PythonPlayground */,
 				4CDEBB57256E413B00D1711D /* PythonPlaygroundTests */,
 				4CDEBB62256E413B00D1711D /* PythonPlaygroundUITests */,
@@ -99,6 +119,8 @@
 		4CDEBB40256E413600D1711D /* PythonPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				4C7CF6FF256F3A2600A980FD /* Python */,
+				4C7CF6FA256F30CE00A980FD /* rubicon-objc-0.4.0 */,
 				4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */,
 				4CDEBB43256E413600D1711D /* ContentView.swift */,
 				4CDEBB45256E413B00D1711D /* Assets.xcassets */,
@@ -152,6 +174,9 @@
 			dependencies = (
 			);
 			name = PythonPlayground;
+			packageProductDependencies = (
+				4CDEBB7B256E43C000D1711D /* PythonKit */,
+			);
 			productName = PythonPlayground;
 			productReference = 4CDEBB3E256E413600D1711D /* PythonPlayground.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +248,9 @@
 				Base,
 			);
 			mainGroup = 4CDEBB35256E413600D1711D;
+			packageReferences = (
+				4CDEBB7A256E43C000D1711D /* XCRemoteSwiftPackageReference "PythonKit" */,
+			);
 			productRefGroup = 4CDEBB3F256E413600D1711D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -241,6 +269,8 @@
 			files = (
 				4CDEBB49256E413B00D1711D /* Preview Assets.xcassets in Resources */,
 				4CDEBB46256E413B00D1711D /* Assets.xcassets in Resources */,
+				4C7CF6FB256F30CE00A980FD /* rubicon-objc-0.4.0 in Resources */,
+				4C7CF701256F3A6400A980FD /* ObjCBridge.py in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +618,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4CDEBB7A256E43C000D1711D /* XCRemoteSwiftPackageReference "PythonKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/PythonKit.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4CDEBB7B256E43C000D1711D /* PythonKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4CDEBB7A256E43C000D1711D /* XCRemoteSwiftPackageReference "PythonKit" */;
+			productName = PythonKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4CDEBB4C256E413B00D1711D /* PythonPlayground.xcdatamodeld */ = {

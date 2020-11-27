@@ -1,0 +1,22 @@
+*.pyc
+*~
+.*.sw[op]
+*.egg-info
+.coverage
+dist
+build
+_build
+distribute-*
+env
+local
+.tox
+
+# OS X
+.DS_Store
+
+# PyCharm
+.idea/
+*.iml
+
+# VS Code
+.vscode/
