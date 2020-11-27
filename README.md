@@ -3,6 +3,8 @@
 This iOS app demonstrates use of Swift packages Python-iOS and PythonKit.
 It provides Python interpreter-like experience.
 
+![Screen Shot](/ScreenShot.png)
+
 ## Dependencies
 
 - https://github.com/kewlbear/Python-iOS

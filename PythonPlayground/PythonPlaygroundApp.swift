@@ -96,7 +96,9 @@ class Buffer: ObservableObject {
     
     func read() -> String {
         if inputs.isEmpty {
+            standardOutReader?.isBufferEnabled = false
             semaphore.wait()
+            standardOutReader?.isBufferEnabled = true
         }
         return inputs.removeFirst()
     }
@@ -114,6 +116,8 @@ class StandardOutReader {
     
     let outputPipe = Pipe()
     
+    var isBufferEnabled = true
+    
     init() {
         dup2(STDOUT_FILENO, outputPipe.fileHandleForWriting.fileDescriptor)
         
@@ -124,6 +128,10 @@ class StandardOutReader {
             let data = handle.availableData
             
             self?.outputPipe.fileHandleForWriting.write(data)
+            
+            guard self?.isBufferEnabled ?? false else {
+                return
+            }
             
             let str = String(data: data, encoding: .ascii) ?? "<Non-ascii data of size\(data.count)>\n"
             DispatchQueue.main.async {
