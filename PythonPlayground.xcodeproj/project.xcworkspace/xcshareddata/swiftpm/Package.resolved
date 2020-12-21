@@ -15,16 +15,7 @@
         "repositoryURL": "https://github.com/pvieito/LoggerKit.git",
         "state": {
           "branch": "master",
-          "revision": "835b41248dbe474eb33dac2c1ef1376dea7dc11d",
-          "version": null
-        }
-      },
-      {
-        "package": "Python-iOS",
-        "repositoryURL": "https://github.com/kewlbear/Python-iOS.git",
-        "state": {
-          "branch": "main",
-          "revision": "0c95137405241d65ad8a22756b141ba64710186c",
+          "revision": "7d88a110446af6dcaabcba57e3cc3d26e9d49e50",
           "version": null
         }
       },
@@ -33,7 +24,7 @@
         "repositoryURL": "https://github.com/kewlbear/PythonKit.git",
         "state": {
           "branch": "master",
-          "revision": "3612c7e5bd1a2479655b3fe3972fb3cf5fe0b7f9",
+          "revision": "6caffb495e6315a00413f52cb034575965d40989",
           "version": null
         }
       },
@@ -51,7 +42,7 @@
         "repositoryURL": "https://github.com/apple/swift-argument-parser",
         "state": {
           "branch": "main",
-          "revision": "53555a04503c175eaffcf587e4b8c380a7c41a5c",
+          "revision": "4273ad222e6c51969e8585541f9da5187ad94e47",
           "version": null
         }
       }

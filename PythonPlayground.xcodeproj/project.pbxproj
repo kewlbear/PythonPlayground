@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C1772E925907B2A003599AF /* Python-iOS in Frameworks */ = {isa = PBXBuildFile; productRef = 4C1772E825907B2A003599AF /* Python-iOS */; };
 		4C7CF6FB256F30CE00A980FD /* rubicon-objc-0.4.0 in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CF6FA256F30CE00A980FD /* rubicon-objc-0.4.0 */; };
 		4C7CF701256F3A6400A980FD /* ObjCBridge.py in Resources */ = {isa = PBXBuildFile; fileRef = 4C7CF700256F3A6400A980FD /* ObjCBridge.py */; };
 		4CDEBB42256E413600D1711D /* PythonPlaygroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDEBB41256E413600D1711D /* PythonPlaygroundApp.swift */; };
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C1772E925907B2A003599AF /* Python-iOS in Frameworks */,
 				4CDEBB7C256E43C000D1711D /* PythonKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,6 +178,7 @@
 			name = PythonPlayground;
 			packageProductDependencies = (
 				4CDEBB7B256E43C000D1711D /* PythonKit */,
+				4C1772E825907B2A003599AF /* Python-iOS */,
 			);
 			productName = PythonPlayground;
 			productReference = 4CDEBB3E256E413600D1711D /* PythonPlayground.app */;
@@ -250,6 +253,7 @@
 			mainGroup = 4CDEBB35256E413600D1711D;
 			packageReferences = (
 				4CDEBB7A256E43C000D1711D /* XCRemoteSwiftPackageReference "PythonKit" */,
+				4C1772E725907B2A003599AF /* XCRemoteSwiftPackageReference "Python-iOS" */,
 			);
 			productRefGroup = 4CDEBB3F256E413600D1711D /* Products */;
 			projectDirPath = "";
@@ -620,6 +624,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4C1772E725907B2A003599AF /* XCRemoteSwiftPackageReference "Python-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kewlbear/Python-iOS.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		4CDEBB7A256E43C000D1711D /* XCRemoteSwiftPackageReference "PythonKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kewlbear/PythonKit.git";
@@ -631,6 +643,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4C1772E825907B2A003599AF /* Python-iOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C1772E725907B2A003599AF /* XCRemoteSwiftPackageReference "Python-iOS" */;
+			productName = "Python-iOS";
+		};
 		4CDEBB7B256E43C000D1711D /* PythonKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4CDEBB7A256E43C000D1711D /* XCRemoteSwiftPackageReference "PythonKit" */;
