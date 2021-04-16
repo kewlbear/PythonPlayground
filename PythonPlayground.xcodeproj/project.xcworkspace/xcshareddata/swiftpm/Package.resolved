@@ -20,11 +20,29 @@
         }
       },
       {
+        "package": "Python-iOS",
+        "repositoryURL": "https://github.com/kewlbear/Python-iOS.git",
+        "state": {
+          "branch": "main",
+          "revision": "1c4abf50810945592dabd1e1ed570ee3fb8ac915",
+          "version": null
+        }
+      },
+      {
         "package": "PythonKit",
         "repositoryURL": "https://github.com/kewlbear/PythonKit.git",
         "state": {
           "branch": "master",
           "revision": "6caffb495e6315a00413f52cb034575965d40989",
+          "version": null
+        }
+      },
+      {
+        "package": "PythonSupport",
+        "repositoryURL": "https://github.com/kewlbear/PythonSupport.git",
+        "state": {
+          "branch": "main",
+          "revision": "00425ec7a9042a52419116d816406ea23ae93457",
           "version": null
         }
       },
