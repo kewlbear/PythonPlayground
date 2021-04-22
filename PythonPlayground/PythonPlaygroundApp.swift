@@ -46,9 +46,13 @@ struct PythonPlaygroundApp: App {
             SetTMP()
             
             let sys = Python.import("sys")
+            
+            sys.stdout = Python.open(NSTemporaryDirectory() + "stdout.txt", "w", encoding: "utf8")
+            sys.stderr = sys.stdout
+            
             print(sys.stdout.encoding)
             
-            standardOutReader = StandardOutReader()
+            standardOutReader = StandardOutReader(STDOUT_FILENO: Int32(sys.stdout.fileno())!, STDERR_FILENO: Int32(sys.stderr.fileno())!)
             
             guard let rubiconPath = Bundle.main.url(forResource: "rubicon-objc-0.4.0", withExtension: nil)?.path else {
                 return
@@ -104,8 +108,20 @@ class Buffer: ObservableObject {
     }
     
     func onCommit() {
-        text.append(input.appending("\n"))
-        inputs.append(input)
+        var t = input
+        let table = [
+            "\u{2018}": "\'", // ‘
+            "\u{2019}": "\'", // ’
+            "\u{201C}": "\"", // “
+            "\u{201D}": "\"", // ”
+        ]
+        for (c, r) in table {
+            t = t.replacingOccurrences(of: c, with: r)
+        }
+        print(input, "->", t)
+
+        text.append(t.appending("\n"))
+        inputs.append(t)
         input = ""
         semaphore.signal()
     }
@@ -118,7 +134,7 @@ class StandardOutReader {
     
     var isBufferEnabled = true
     
-    init() {
+    init(STDOUT_FILENO: Int32 = Darwin.STDOUT_FILENO, STDERR_FILENO: Int32 = Darwin.STDERR_FILENO) {
         dup2(STDOUT_FILENO, outputPipe.fileHandleForWriting.fileDescriptor)
         
         dup2(inputPipe.fileHandleForWriting.fileDescriptor, STDOUT_FILENO)
